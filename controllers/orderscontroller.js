@@ -59,8 +59,7 @@ exports.updateOrder = async (req, res, next) => {
             id,
             req.body,
             {
-                returnDocument: "after",
-                runValidators: true
+                new: true
             }
         );
 
